@@ -1,201 +1,264 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News Website</title>
+    <title>নিরপেক্ষ</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/styles.css">
+    <style>
+        @import url('https://fonts.maateen.me/solaiman-lipi/font.css');
+
+        body {
+            font-family: 'SolaimanLipi', Arial, sans-serif;
+        }
+    </style>
 </head>
 
-<body class="bg-gray-100">
-    <div class="container mx-auto p-4">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <!-- Latest Section -->
-            <div class="md:order-none order-1 col-span-1 sticky-container">
-                <h2 class="text-2xl font-bold mb-4 border-b-2 border-yellow-500">Latest</h2>
-                <div class="pr-4">
-                    <ul class="space-y-4">
-                        <li class="flex items-start">
-                            <span class="text-sm text-gray-500 mr-2 whitespace-nowrap">1h</span>
-                            <a href="#" class="text-gray-800 hover:text-yellow-500 transition">নতুন আইজিপি বাহারুল
-                                আলম</a>
+<body class="bg-white">
+    <!-- Header -->
+    <header class="sticky top-0 bg-slate-800 text-white">
+        <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <div class="flex items-center">
+                    <button class="mr-4">☰</button>
+                    <span>Set weather</span>
+                </div>
+            </div>
+
+            <div class="flex-1 text-center">
+                <h1 class="md:text-4xl text-xl font-bold">নিরপেক্ষ</h1>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <button class="bg-yellow-400 text-black px-4 py-1 rounded">ই-পেপার</button>
+                <button class="text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="border-b">
+        <div class="lg:container mx-auto px-4">
+            <ul class="flex justify-center space-x-8 py-2">
+                <li><a href="#" class="hover:text-blue-600 border-b-2 border-yellow-400 pb-2">Top Stories</a></li>
+                <li><a href="#" class="hover:text-blue-600">News</a></li>
+                <li><a href="#" class="hover:text-blue-600">Sports</a></li>
+                <li><a href="#" class="hover:text-blue-600">Life</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-6">
+        <div class="md:grid grid-cols-12 gap-6">
+            <!-- Left Sidebar -->
+            <div class="col-span-3">
+                <div class="mb-6">
+                    <h2 class="lg:text-xl text-lg font-bold mb-4 border-l-4 border-orange-500 pl-2">সাম্প্রতিক</h2>
+                    <ul class="space-y-4 list-none list-[bengali] list-inside">
+                        <li class="pb-2 flex gap-3">
+                            <span class="text-4xl text-[#929292]">১</span>
+                            <a href="#" class="lg:text-xl hover:text-blue-600">বিএনপি ছেড়ে ঝালকাঠি-১
+                                (রাজাপুর-কাঠালিয়া)
+                                আসনে
+                                আওয়ামী লীগের</a>
                         </li>
-                        <li class="flex items-start">
-                            <span class="text-sm text-gray-500 mr-2 whitespace-nowrap">4h</span>
-                            <a href="#" class="text-gray-800 hover:text-yellow-500 transition">তাদের দশাও যেন পলাতক শেখ
-                                হাসিনার মতো না হয়...</a>
+                        <li class="pb-2 flex gap-3">
+                            <span class="text-4xl text-[#929292]">২</span>
+                            <a href="#" class="lg:text-xl hover:text-blue-600">বিএনপি ছেড়ে ঝালকাঠি-১
+                                (রাজাপুর-কাঠালিয়া)
+                                আসনে
+                                আওয়ামী লীগের</a>
                         </li>
-                        <li class="flex items-start">
-                            <span class="text-sm text-gray-500 mr-2 whitespace-nowrap">5h</span>
-                            <a href="#" class="text-gray-800 hover:text-yellow-500 transition">অধ্যাদেশের খসড়া অনুমোদন
-                                রাজনৈতিক দলের বিরুদ্ধে শাস্তির বিধান রাখেনি সরকার</a>
+                        <li class="pb-2 flex gap-3">
+                            <span class="text-4xl text-[#929292]">৩</span>
+                            <a href="#" class="lg:text-xl hover:text-blue-600">বিএনপি ছেড়ে ঝালকাঠি-১
+                                (রাজাপুর-কাঠালিয়া)
+                                আসনে
+                                আওয়ামী লীগের</a>
                         </li>
-                        <li class="flex items-start">
-                            <span class="text-sm text-gray-500 mr-2 whitespace-nowrap">5h</span>
-                            <a href="#" class="text-gray-800 hover:text-yellow-500 transition">‘ও একটা পারফেক্ট মেয়ে
-                                ছিল’</a>
+                        <li class="pb-2 flex gap-3">
+                            <span class="text-4xl text-[#929292]">৪</span>
+                            <a href="#" class="lg:text-xl hover:text-blue-600">বিএনপি ছেড়ে ঝালকাঠি-১
+                                (রাজাপুর-কাঠালিয়া)
+                                আসনে
+                                আওয়ামী লীগের</a>
                         </li>
-                        <li class="flex items-start">
-                            <span class="text-sm text-gray-500 mr-2 whitespace-nowrap">6h</span>
-                            <a href="#" class="text-gray-800 hover:text-yellow-500 transition">ডিএমপির নতুন কমিশনার
-                                সাজ্জাত আলী</a>
+                        <li class="pb-2 flex gap-3">
+                            <span class="text-4xl text-[#929292]">৫</span>
+                            <a href="#" class="lg:text-xl hover:text-blue-600">বিএনপি ছেড়ে ঝালকাঠি-১
+                                (রাজাপুর-কাঠালিয়া)
+                                আসনে
+                                আওয়ামী লীগের</a>
                         </li>
-                        <li class="flex items-start">
-                            <span class="text-sm text-gray-500 mr-2 whitespace-nowrap">8h</span>
-                            <a href="#" class="text-gray-800 hover:text-yellow-500 transition">আনুপাতিক নির্বাচন নিয়ে
-                                যেসব প্রশ্নের উত্তর জানা প্রয়োজন</a>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-sm text-gray-500 mr-2 whitespace-nowrap">9h</span>
-                            <a href="#" class="text-gray-800 hover:text-yellow-500 transition">একাত্তরে জামায়াতের ভুল
-                                প্রমাণিত হলে জাতির কাছে ক্ষমা চাইব: জামায়াতের আমির</a>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-sm text-gray-500 mr-2 whitespace-nowrap">9h</span>
-                            <a href="#" class="text-gray-800 hover:text-yellow-500 transition">মহাখালীতে রেললাইনে
-                                ব্যাটারিচালিত রিকশা ফেলে অবরোধ, আগারগাঁওয়ে অবরোধ</a>
+                        <li class="pb-2 flex gap-3">
+                            <span class="text-4xl text-[#929292]">৬</span>
+                            <a href="#" class="lg:text-xl hover:text-blue-600">বিএনপি ছেড়ে ঝালকাঠি-১
+                                (রাজাপুর-কাঠালিয়া)
+                                আসনে
+                                আওয়ামী লীগের</a>
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Featured Article Section -->
-            <div class="col-span-2">
-                <img src="https://images.unsplash.com/photo-1495020689067-958852a7765e?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://images.unsplash.com/photo-1495020689067-958852a7765e?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="Featured article image" ?news class="w-full h-auto mb-4 rounded-lg shadow-md">
-                <div>
-                    <h3 class="text-sm text-gray-500 uppercase mb-2 font-bold">রাজনীতি</h3>
-                    <a href="#" class="block ">
-                        <h1 class=" hover:text-yellow-500 transition text-3xl font-bold mb-2 text-gray-900">নতুন সিইসি
-                            হলেন সাবেক সচিব নাসির উদ্দীন</h1>
-                    </a>
-                    <p class="text-gray-700 mb-4 text-lg">প্রধান নির্বাচন কমিশনার (সিইসি) হিসেবে নিয়োগ পেয়েছেন
-                        অবসরপ্রাপ্ত সচিব এ এম এম নাসির উদ্দীন।</p>
-                    <p class="text-sm text-gray-500 mb-4">আপডেট: ২১ নভেম্বর ২০২৪, ১৫: ০৫ </p>
-                    <ul class="list-disc pl-5 space-y-2 mb-8">
-                        <li><a href="#" class="text-gray-800 hover:text-yellow-500 transition">আজ বৃহস্পতিবার এ বিষয়ে
-                                প্রজ্ঞাপন জারি করেছে মন্ত্রিপরিষদ বিভাগ</a></li>
-                        <li><a href="#" class="text-gray-800 hover:text-yellow-500 transition">একইসঙ্গে আরও চার
-                                কমিশনারকে নিয়োগ দেওয়া হয়েছে।
-                            </a></li>
-                        <li><a href="#" class="text-gray-800 hover:text-yellow-500 transition">চার কমিশনার হিসেবে যাঁরা
-                                নিয়োগ পেয়েছেন তাঁরা হলেন, সাবেক অতিরিক্ত সচিব মো.আনোয়ারুল ইসলাম সরকার, অবসরপ্রাপ্ত জেলা
-                                ও দায়রা জজ আবদুর রহমানেল মাসুদ, সাবেক যুগ্ম সচিব তাহমিদা আহমদ এবং অবসরপ্রাপ্ত
-                                ব্রিগেডিয়ার জেনারেল আবুল ফজল মো. সানাউল্লাহ।
-
-                            </a></li>
-                        <li><a href="#" class="text-gray-800 hover:text-yellow-500 transition">সিইসি পদে বিএনপির দেওয়া
-                                তালিকায় আরেক নামটি ছিল শফিকুল ইসলাম। বিএনপি চলতি মাসের শুরুতে অনুসন্ধান কমিটির কাছে এই
-                                তালিকা দিয়েছিল।
-                            </a></li>
-                    </ul>
-                    <button
-                        class="w-full border border-gray-400 px-4 py-2 text-gray-800 hover:bg-gray-200 transition">বিস্তারিত
-                        পরুন</button>
-                </div>
-
-                <!-- Additional News Articles -->
-                <div class="mt-8 space-y-8">
-                    <div class="border-t border-gray-300 pt-4">
-                        <h3 class="text-sm text-gray-500 uppercase mb-2 font-bold">বাংলাদেশ</h3>
-                        <a href="#" class="block hover:text-yellow-500 transition">
-                            <h2 class="text-2xl font-bold mb-2">মানহানিসহ ড. ইউনূসের নামে করা ছয় মামলার কার্যক্রম
-                                বাতিলের রায় প্রকাশ</h2>
-                        </a>
+            <!-- Main News Section -->
+            <div class="col-span-6">
+                <article class="mb-8">
+                    <span class="text-sm text-gray-500 mb-1 block">রাজনীতি</span>
+                    <div class="mb-4">
+                        <img src="https://images.prothomalo.com/prothomalo-bangla%2F2023-11%2F71b18288-83ab-44e2-ada3-d6f998047e80%2FBNP_logo.jfif?rect=0%2C0%2C1600%2C1067&auto=format%2Ccompress&fmt=webp&format=webp&w=640&dpr=1.0"
+                            alt="Damaged Car" class="w-full mb-3">
+                        <h1 class="lg:text-4xl text-2xl text-center md:px-10 font-bold mb-2">বিএনপি ছেড়ে ঝালকাঠি-১
+                            (রাজাপুর
+                            কাঠালিয়া)
+                            আসনে
+                            আওয়ামী
+                            লীগের</h1>
+                        <p class="lg:text-xl text-lg md:px-10 text-gray-700">অভিযোগ করেন, "আজ সকাল সাড়ে আটটার দিকে
+                            বরিশালের বায়া
+                            থেকে
+                            রাজাপুর আসার পথে উত্তর পিরগী লাইকুটি এলাকায় আমার গাড়িতে হামলা।"</p>
                     </div>
+                    <hr>
+                </article>
 
-                    <div class="border-t border-gray-300 pt-4">
-                        <h3 class="text-sm text-gray-500 uppercase mb-2 font-bold">ইউরোপ</h3>
-                        <div class="flex flex-col md:flex-row gap-4">
-                            <div class="md:w-2/3">
-                                <a href="#" class="block hover:text-yellow-500 transition">
-                                    <h2 class="text-2xl font-bold mb-2">রাশিয়ায় ক্ষেপণাস্ত্র হামলার অনুমতি:
-                                        যুক্তরাষ্ট্র–যুক্তরাজ্যকে কেমন জবাব দিতে পারেন পুতিন</h2>
-                                </a>
-                                <p class="text-gray-700 mb-2">রাশিয়ার ভূখণ্ডে যুক্তরাষ্ট্র ও যুক্তরাজ্যের দূরপাল্লার
-                                    ক্ষেপণাস্ত্র দিয়ে ইউক্রেনকে হামলা চালানোর অনুমতি দিলে তার প্রতিশোধ নেওয়ার হুমকি আগেই
-                                    দিয়েছে মস্কো।</p>
-                                <p class="text-sm text-gray-500 mb-4">প্রকাশ: ২১ নভেম্বর ২০২৪, ১৩: ০৯</p>
-                                <ul class="list-disc pl-5 space-y-2">
-                                    <li><a href="#" class="text-gray-800 hover:text-yellow-500 transition">সতর্ক করে
-                                            পুতিন প্রশাসন বলেছে, এ সিদ্ধান্তের জবাব হিসেবে তারা কোনোকিছুই বিকল্প হিসেবে
-                                            বাদ রাখছে না।</a></li>
-                                    <li><a href="#" class="text-gray-800 hover:text-yellow-500 transition">ইতিমধ্যে
-                                            যুক্তরাষ্ট্র ও যুক্তরাজ্য ইউক্রেনকে ওই অনুমতি দিয়েছে এবং দেশটি দূরপাল্লার
-                                            ক্ষেপণাস্ত্র দিয়ে রাশিয়ায় হামলাও চালিয়েছে।
-                                        </a></li>
-                                    <li><a href="#" class="text-gray-800 hover:text-yellow-500 transition">এ সপ্তাহের
-                                            শুরুতে ক্রেমলিন তার পারমাণবিক নীতিতে আনুষ্ঠানিক পরিবর্তন আনার ঘোষণা
-                                            দিয়েছে।</a>
-                                    </li>
-                                    <li><a href="#" class="text-gray-800 hover:text-yellow-500 transition">এতে রাশিয়ার
-                                            মাটিতে পশ্চিমা সামরিক জোট ন্যাটোর সহায়তায় কোনো হামলা হলে পারমাণবিক অস্ত্র
-                                            ব্যবহার করে সম্ভাব্য জবাব দেওয়ার কথা বলা হয়েছে।</a></li>
-                                </ul>
-                            </div>
-                            <div class="md:w-1/3">
-                                <img src="https://images.unsplash.com/photo-1604595704321-f24afaa2fa6e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    alt="News image" class="w-full h-auto rounded-lg shadow-md">
-                            </div>
+                <!-- Secondary News Items -->
+                <article class="flex gap-4 pb-4 border-b p-4">
+                    <div class="flex-1">
+                        <span class="text-sm text-gray-500 mb-1 block">বিজ্ঞাপন</span>
+                        <h2 class="lg:text-2xl text-lg font-semibold mb-2">বিএনপি ছেড়ে ঝালকাঠি-১ (রাজাপুর কাঠালিয়া)
+                            আসনে
+                            আওয়ামী
+                            লীগের</h2>
+                        <p class="text-sm text-gray-600">অভিযোগ করেন, "আজ সকাল সাড়ে আটটার দিকে বরিশালের বায়া থেকে
+                            রাজাপুর আসার পথে উত্তর পিরগী লাইকুটি এলাকায়।"</p>
+                    </div>
+                    <img src="https://images.prothomalo.com/prothomalo-bangla%2F2023-11%2F71b18288-83ab-44e2-ada3-d6f998047e80%2FBNP_logo.jfif?rect=0%2C0%2C1600%2C1067&auto=format%2Ccompress&fmt=webp&format=webp&w=640&dpr=1.0"
+                        alt="News" class="w-1/3 object-cover">
+                </article>
+                <hr>
+                <!-- Repeat similar article structure 4-5 more times -->
+                <article class="flex gap-4 pb-4 border-b p-4">
+                    <div class="flex-1">
+                        <span class="text-sm text-gray-500 mb-1 block">বিজ্ঞাপন</span>
+                        <h2 class="lg:text-2xl text-lg font-semibold mb-2">বিএনপি ছেড়ে ঝালকাঠি-১ (রাজাপুর কাঠালিয়া)
+                            আসনে
+                            আওয়ামী
+                            লীগের</h2>
+                        <p class="text-sm text-gray-600">অভিযোগ করেন, "আজ সকাল সাড়ে আটটার দিকে বরিশালের বায়া থেকে
+                            রাজাপুর আসার পথে উত্তর পিরগী লাইকুটি এলাকায়।"</p>
+                    </div>
+                    <img src="https://images.prothomalo.com/prothomalo-bangla%2F2023-11%2F71b18288-83ab-44e2-ada3-d6f998047e80%2FBNP_logo.jfif?rect=0%2C0%2C1600%2C1067&auto=format%2Ccompress&fmt=webp&format=webp&w=640&dpr=1.0"
+                        alt="News" class="w-1/3 object-cover">
+                </article>
+                <hr>
+                <!-- Repeat similar article structure 4-5 more times -->
+                <article class="flex gap-4 pb-4 border-b p-4">
+                    <div class="flex-1">
+                        <span class="text-sm text-gray-500 mb-1 block">বিজ্ঞাপন</span>
+                        <h2 class="lg:text-2xl text-lg font-semibold mb-2">বিএনপি ছেড়ে ঝালকাঠি-১ (রাজাপুর কাঠালিয়া)
+                            আসনে আওয়ামী
+                            লীগের</h2>
+                        <p class="text-sm text-gray-600">অভিযোগ করেন, "আজ সকাল সাড়ে আটটার দিকে বরিশালের বায়া থেকে
+                            রাজাপুর আসার পথে উত্তর পিরগী লাইকুটি এলাকায়।"</p>
+                    </div>
+                </article>
+                <hr>
+                <!-- Repeat similar article structure 4-5 more times -->
+                <article class="flex gap-4 pb-4 border-b p-4">
+                    <div class="flex-1">
+                        <span class="text-sm text-gray-500 mb-1 block">বিজ্ঞাপন</span>
+                        <h2 class="lg:text-2xl text-lg font-semibold mb-2">বিএনপি ছেড়ে ঝালকাঠি-১ (রাজাপুর কাঠালিয়া)
+                            আসনে আওয়ামী
+                            লীগের</h2>
+                        <p class="text-sm text-gray-600">অভিযোগ করেন, "আজ সকাল সাড়ে আটটার দিকে বরিশালের বায়া থেকে
+                            রাজাপুর আসার পথে উত্তর পিরগী লাইকুটি এলাকায়।"</p>
+                    </div>
+                </article>
+                <hr>
+                <!-- Repeat similar article structure 4-5 more times -->
+            </div>
+
+            <!-- Right Sidebar -->
+            <div class="col-span-3">
+                <div class="mb-6">
+                    <span class="text-sm text-gray-500 mb-1 block">Advertisement</span>
+                    <div class="space-y-4">
+                        <div class="border p-4">
+                            <img src="https://imgs.search.brave.com/asNqMjHaM5tPLKVl8atkoyDzfco_SIfd85X5zuxLZRs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtcGxhdGZvcm0u/OTlzdGF0aWMuY29t/Ly83S0tJNUNJbnVx/di1LUXMzeTNGWE85/OFlqU1U9LzI1Mngy/NTI6MTc1MXgxNzUx/L2ZpdC1pbi81MDB4/NTAwLzk5ZGVzaWdu/cy1jb250ZXN0cy1h/dHRhY2htZW50cy82/Mi82MjUwOC9hdHRh/Y2htZW50XzYyNTA4/MDIy.jpeg"
+                                alt="Advertisement" class="w-full">
                         </div>
-                    </div>
-
-                    <div class="border-t border-gray-300 pt-4">
-                        <h3 class="text-sm text-gray-500 uppercase mb-2 font-bold">যুক্তরাষ্ট্র</h3>
-                        <div class="flex flex-col md:flex-row gap-4">
-                            <div class="md:w-2/3">
-                                <a href="#" class="block hover:text-yellow-500 transition">
-                                    <h2 class="text-2xl font-bold mb-2">ভারতীয় ধনকুবের গৌতম আদানি ঘুষ-প্রতারণায়
-                                        যুক্তরাষ্ট্রে অভিযুক্ত</h2>
-                                </a>
-                                <p class="text-gray-700 mb-2">বিশ্বের অন্যতম শীর্ষ ধনী ভারতীয় আদানি গ্রুপের চেয়ারপারসন
-                                    গৌতম আদানি যুক্তরাষ্ট্রে ঘুষ ও প্রতারণার অভিযোগে অভিযুক্ত হয়েছেন।</p>
-                                <p class="text-sm text-gray-500 mb-4">আপডেট: ২১ নভেম্বর ২০২৪, ১১: ০৬ </p>
-                                <ul class="list-disc pl-5 space-y-2">
-                                    <li><a href="#" class="text-gray-800 hover:text-yellow-500 transition">গতকাল বুধবার
-                                            যুক্তরাষ্ট্রের নিউইয়র্কের ফেডারেল কৌঁসুলিরা গৌতম আদানি ও তাঁর কয়েকজন
-                                            সহযোগীকে অভিযুক্ত করেন।</a></li>
-                                    <li><a href="#" class="text-gray-800 hover:text-yellow-500 transition">অভিযোগে বলা
-                                            হয়েছে, গৌতম আদানি ও তাঁর সহযোগীরা ভারতীয় সরকারি কর্মকর্তাদের ঘুষ দিয়েছিলেন।
-                                            পরবর্তী সময়ে তাঁরা বিনিয়োগকারীদের কাছে এ বিষয়ে মিথ্যা বলেছিলেন।</a>
-                                    </li>
-                                    <li><a href="#" class="text-gray-800 hover:text-yellow-500 transition">মার্কিন
-                                            অ্যাটর্নির নিউইয়র্কের ইস্টার্ন ডিস্ট্রিক্টের দপ্তর এক বিবৃতিতে গৌতম আদানিসহ
-                                            অন্যদের আনুষ্ঠানিকভাবে অভিযুক্ত করার তথ্য জানিয়েছে।</a></li>
-                                    <li><a href="#" class="text-gray-800 hover:text-yellow-500 transition">আসামিদের
-                                            বিরুদ্ধে অভিযোগে বলা হয়েছে, আদানি গ্রিন এনার্জির জন্য সৌরশক্তি প্রকল্পের কাজ
-                                            পেতে তাঁরা ভারতীয় সরকারি কর্মকর্তাদের ২৫ কোটি মার্কিন ডলারের বেশি ঘুষ
-                                            দিয়েছিলেন।</a></li>
-                                </ul>
-                            </div>
-                            <div class="md:w-1/3">
-                                <img src="https://images.prothomalo.com/prothomalo-bangla%2F2024-11-21%2Fwnzvhuxx%2FIndias-Adani.jpg?rect=0%2C0%2C5968%2C3979&auto=format%2Ccompress&fmt=webp&format=webp&w=640&dpr=1.0"
-                                    alt="News image" class="w-full h-auto rounded-lg shadow-md">
-                            </div>
+                        <div class="border p-4">
+                            <img src="https://imgs.search.brave.com/asNqMjHaM5tPLKVl8atkoyDzfco_SIfd85X5zuxLZRs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtcGxhdGZvcm0u/OTlzdGF0aWMuY29t/Ly83S0tJNUNJbnVx/di1LUXMzeTNGWE85/OFlqU1U9LzI1Mngy/NTI6MTc1MXgxNzUx/L2ZpdC1pbi81MDB4/NTAwLzk5ZGVzaWdu/cy1jb250ZXN0cy1h/dHRhY2htZW50cy82/Mi82MjUwOC9hdHRh/Y2htZW50XzYyNTA4/MDIy.jpeg"
+                                alt="Grocery Marketplace" class="w-full">
                         </div>
-                    </div>
-
-                    <div class="border-t border-gray-300 pt-4">
-                        <h3 class="text-sm text-gray-500 uppercase mb-2 font-bold">বিশ্ববাণিজ্য</h3>
-                        <div class="flex flex-col md:flex-row gap-4">
-                            <div class="md:w-2/3">
-                                <a href="#" class="block hover:text-yellow-500 transition">
-                                    <h2 class="text-2xl font-bold mb-2">যুক্তরাষ্ট্রের বাজারে বিক্রি বাড়াতে পারবে কি
-                                        ভক্সওয়াগন</h2>
-                                </a>
-                            </div>
-                            <div class="md:w-1/3">
-                                <img src="https://images.prothomalo.com/prothomalo-bangla%2F2022-07%2Fdb678b5e-2561-4406-93ce-c36fb984ddb9%2FVoxwagon_1.webp?rect=0%2C0%2C960%2C640&auto=format%2Ccompress&fmt=webp&format=webp&w=640&dpr=1.0"
-                                    alt="News image" class="w-full h-auto rounded-lg shadow-md">
-                            </div>
+                        <div class="border p-4">
+                            <img src="https://imgs.search.brave.com/asNqMjHaM5tPLKVl8atkoyDzfco_SIfd85X5zuxLZRs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtcGxhdGZvcm0u/OTlzdGF0aWMuY29t/Ly83S0tJNUNJbnVx/di1LUXMzeTNGWE85/OFlqU1U9LzI1Mngy/NTI6MTc1MXgxNzUx/L2ZpdC1pbi81MDB4/NTAwLzk5ZGVzaWdu/cy1jb250ZXN0cy1h/dHRhY2htZW50cy82/Mi82MjUwOC9hdHRh/Y2htZW50XzYyNTA4/MDIy.jpeg"
+                                alt="Jobs Advertisement" class="w-full">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
+
+    <section class="container mx-auto py-8">
+        <div class="text-center mb-6">
+            <h2 class="text-4xl font-bold text-red-800">বাংলাদেশ</h2>
+        </div>
+        <div class="flex flex-col max-md:items-center md:flex-row gap-6">
+            <!-- Left Side -->
+            <div class="space-y-4">
+                <div class="bg-white md:max-w-sm p-4 shadow">
+                    <img src="https://images.prothomalo.com/prothomalo-bangla%2F2023-11%2F71b18288-83ab-44e2-ada3-d6f998047e80%2FBNP_logo.jfif?rect=0%2C0%2C1600%2C1067&auto=format%2Ccompress&fmt=webp&format=webp&w=640&dpr=1.0"
+                        alt="News image" class="w-full h-auto mb-2">
+                    <h3 class="text-sm font-bold">অপরাধ</h3>
+                    <p class="text-sm">বিএনপি ছেড়ে মালকাঠি-১ (রাজাপুর-কাঠালিয়া) আসনে আওয়ামী লীগের</p>
+                </div>
+                <div class="bg-white md:max-w-sm p-4 shadow">
+                    <img src="https://images.prothomalo.com/prothomalo-bangla%2F2023-11%2F71b18288-83ab-44e2-ada3-d6f998047e80%2FBNP_logo.jfif?rect=0%2C0%2C1600%2C1067&auto=format%2Ccompress&fmt=webp&format=webp&w=640&dpr=1.0"
+                        alt="News image" class="w-full h-auto mb-2">
+                    <h3 class="text-sm font-bold">অপরাধ</h3>
+                    <p class="text-sm">বিএনপি ছেড়ে মালকাঠি-১ (রাজাপুর-কাঠালিয়া) আসনে আওয়ামী লীগের</p>
+                </div>
+            </div>
+            <!-- Middle Feature News -->
+            <div class="bg-white p-4 shadow gap-4 flex flex-col">
+                <img src="https://images.prothomalo.com/prothomalo-bangla%2F2023-11%2F71b18288-83ab-44e2-ada3-d6f998047e80%2FBNP_logo.jfif?rect=0%2C0%2C1600%2C1067&auto=format%2Ccompress&fmt=webp&format=webp&w=640&dpr=1.0   "
+                    alt="Main news image" class="w-full object-cover mb-2">
+                <div>
+                    <div>
+                        <h3 class="text-sm font-bold">রাজনীতি</h3>
+                        <p class="text-lg font-bold mb-2">বিএনপি ছেড়ে মালকাঠি-১ (রাজাপুর-কাঠালিয়া) আসনে আওয়ামী লীগের
+                        </p>
+                    </div>
+                    <p class="text-sm">অভিযোগ করেন, 'আসন্ন সংসদ নির্বাচনে নিকট ভবিষ্যতে বাধা থেকে রাজাপুর-কাঠালিয়া আসনে
+                        দ্বিতীয় মাইকিংয়ের প্রচারণা অব্যাহত রয়েছে।</p>
+                </div>
+            </div>
+            <!-- Right Side -->
+            <div class="space-y-4">
+                <div class="bg-white p-4 shadow md:max-w-sm">
+                    <img src="https://images.prothomalo.com/prothomalo-bangla%2F2023-11%2F71b18288-83ab-44e2-ada3-d6f998047e80%2FBNP_logo.jfif?rect=0%2C0%2C1600%2C1067&auto=format%2Ccompress&fmt=webp&format=webp&w=640&dpr=1.0"
+                        alt="Advertisement" class="w-full h-auto mb-2">
+                </div>
+                <div class="bg-white p-4 shadow md:max-w-sm">
+                    <h3 class="text-sm font-bold">আইন ও আদালত</h3>
+                    <p class="text-sm">বিএনপি ছেড়ে মালকাঠি-১ (রাজাপুর-কাঠালিয়া) আসনে আওয়ামী লীগের</p>
+                </div>
+                <div class="bg-white p-4 shadow md:max-w-sm">
+                    <h3 class="text-sm font-bold">অপরাধ</h3>
+                    <p class="text-sm">বিএনপি ছেড়ে মালকাঠি-১ (রাজাপুর-কাঠালিয়া) আসনে আওয়ামী লীগের</p>
+                </div>
+            </div>
+        </div>
 </body>
 
 </html>
