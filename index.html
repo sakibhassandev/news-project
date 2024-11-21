@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body class="bg-gray-100">
+    <div class="container mx-auto p-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Latest Section -->
+            <div class="col-span-1 sticky-container">
+                <h2 class="text-2xl font-bold mb-4 border-b-2 border-yellow-500">Latest</h2>
+                <div class="pr-4">
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <span class="text-sm text-gray-500 mr-2 whitespace-nowrap">1h</span>
+                            <a href="#" class="text-gray-800 hover:text-yellow-500 transition">Today's daily horoscopes:
+                                Nov. 21, 2024</a>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-sm text-gray-500 mr-2 whitespace-nowrap">4h</span>
+                            <a href="#" class="text-gray-800 hover:text-yellow-500 transition">See Wednesday's flag
+                                football quarterfinal results</a>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-sm text-gray-500 mr-2 whitespace-nowrap">5h</span>
+                            <a href="#" class="text-gray-800 hover:text-yellow-500 transition">U.S. involvement in
+                                Ukraine 'all about the minerals,' Tommy Tuberville claims</a>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-sm text-gray-500 mr-2 whitespace-nowrap">5h</span>
+                            <a href="#" class="text-gray-800 hover:text-yellow-500 transition">Why giraffes might soon
+                                join the endangered species list</a>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-sm text-gray-500 mr-2 whitespace-nowrap">6h</span>
+                            <a href="#" class="text-gray-800 hover:text-yellow-500 transition">Developers: New Baldwin
+                                County subdivision rules could make homes more expensive</a>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-sm text-gray-500 mr-2 whitespace-nowrap">8h</span>
+                            <a href="#" class="text-gray-800 hover:text-yellow-500 transition">Huntsville Hospital's
+                                massive $150 million expansion plan gets green light</a>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-sm text-gray-500 mr-2 whitespace-nowrap">9h</span>
+                            <a href="#" class="text-gray-800 hover:text-yellow-500 transition">AMC issues strict warning
+                                to those who see 'Wicked'</a>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-sm text-gray-500 mr-2 whitespace-nowrap">9h</span>
+                            <a href="#" class="text-gray-800 hover:text-yellow-500 transition">Jax State faces
+                                win-and-in scenario in CUSA matchup with Sam Houston</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Featured Article Section -->
+            <div class="col-span-2">
+                <img src="https://images.unsplash.com/photo-1495020689067-958852a7765e?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://images.unsplash.com/photo-1495020689067-958852a7765e?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Featured article image" ?news class="w-full h-auto mb-4 rounded-lg shadow-md">
+                <div>
+                    <h3 class="text-sm text-gray-500 uppercase mb-2 font-bold">Opinion</h3>
+                    <a href="#" class="block ">
+                        <h1 class=" hover:text-yellow-500 transition text-3xl font-bold mb-2 text-gray-900">Johnson: Kay
+                            Ivey's legacy gets a
+                            much-deserved $1.2 billion life sentence</h1>
+                    </a>
+                    <p class="text-gray-700 mb-4 text-lg">Naming one of Alabama's new prisons for Ivey is appropriate -
+                        for all the wrong reasons.</p>
+                    <p class="text-sm text-gray-500 mb-4">13h ago &nbsp; Roy S. Johnson</p>
+                    <ul class="list-disc pl-5 space-y-2 mb-8">
+                        <li><a href="#" class="text-gray-800 hover:text-yellow-500 transition">'False hope': Black
+                                Alabama residents fear time is running out for flood damage resolution</a></li>
+                        <li><a href="#" class="text-gray-800 hover:text-yellow-500 transition">Tuberville: Republicans
+                                'already planned' to quickly confirm nominees despite 'rumors'</a></li>
+                        <li><a href="#" class="text-gray-800 hover:text-yellow-500 transition">Will horse racing return
+                                to Alabama? What Poarch Creek deal means for Birmingham</a></li>
+                        <li><a href="#" class="text-gray-800 hover:text-yellow-500 transition">Alabama GOP chair,
+                                anti-censorship group blast each other over 'misinformation' claims</a></li>
+                    </ul>
+                    <button
+                        class="w-full border border-gray-400 px-4 py-2 text-gray-800 hover:bg-gray-200 transition">View
+                        more coverage</button>
+                </div>
+
+                <!-- Additional News Articles -->
+                <div class="mt-8 space-y-8">
+                    <div class="border-t border-gray-300 pt-4">
+                        <h3 class="text-sm text-gray-500 uppercase mb-2 font-bold">News</h3>
+                        <a href="#" class="block hover:text-yellow-500 transition">
+                            <h2 class="text-2xl font-bold mb-2">'Downright chilly': Alabama's weekend forecast calls for
+                                coldest temperatures of fall</h2>
+                        </a>
+                    </div>
+
+                    <div class="border-t border-gray-300 pt-4">
+                        <h3 class="text-sm text-gray-500 uppercase mb-2 font-bold">News</h3>
+                        <div class="flex flex-col md:flex-row gap-4">
+                            <div class="md:w-2/3">
+                                <a href="#" class="block hover:text-yellow-500 transition">
+                                    <h2 class="text-2xl font-bold mb-2">Alabama mother of 8 killed in wreck with
+                                        1-year-old son 'made sure her children knew God'</h2>
+                                </a>
+                                <p class="text-gray-700 mb-2">Brandi D. Odell, 46, and her 1-year-old son, Andrew, died
+                                    Tuesday morning. Her 3-year-old daughter, Hope, survived the crash.</p>
+                                <p class="text-sm text-gray-500 mb-4">10h ago &nbsp; Carol Robinson</p>
+                                <ul class="list-disc pl-5 space-y-2">
+                                    <li><a href="#" class="text-gray-800 hover:text-yellow-500 transition">Kidnapping
+                                            charge dropped against man accused of forcing woman to marry him outside
+                                            church</a></li>
+                                    <li><a href="#" class="text-gray-800 hover:text-yellow-500 transition">Alabama teen
+                                            sentenced to 8 years in fentanyl overdose death of 15-year-old girl</a></li>
+                                    <li><a href="#" class="text-gray-800 hover:text-yellow-500 transition">13-year-old
+                                            killed, 3 other teens injured after car hits tree stump, sign, fence</a>
+                                    </li>
+                                    <li><a href="#" class="text-gray-800 hover:text-yellow-500 transition">Texas imam
+                                            arrested in Shelby County child pornography case after his wife alerted
+                                            DHR</a></li>
+                                </ul>
+                            </div>
+                            <div class="md:w-1/3">
+                                <img src="https://images.unsplash.com/photo-1604595704321-f24afaa2fa6e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="News image" class="w-full h-auto rounded-lg shadow-md">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-300 pt-4">
+                        <h3 class="text-sm text-gray-500 uppercase mb-2 font-bold">Alabama Life & Culture</h3>
+                        <div class="flex flex-col md:flex-row gap-4">
+                            <div class="md:w-2/3">
+                                <a href="#" class="block hover:text-yellow-500 transition">
+                                    <h2 class="text-2xl font-bold mb-2">Alabama considering changes for fishermen on
+                                        sharks, red snapper, snook, other species</h2>
+                                </a>
+                                <p class="text-gray-700 mb-2">While most of the changes under discussion could be
+                                    described as fine-tuning, snook and rays could get new protective limits.</p>
+                                <p class="text-sm text-gray-500 mb-4">7h ago &nbsp; Lawrence Specker</p>
+                                <ul class="list-disc pl-5 space-y-2">
+                                    <li><a href="#" class="text-gray-800 hover:text-yellow-500 transition">McDonald's
+                                            for a first date? Alabama men say they're 'lovin' it'</a></li>
+                                    <li><a href="#" class="text-gray-800 hover:text-yellow-500 transition">Standup
+                                            superstars coming to Alabama in 2025: Controversy, clean comedy, more</a>
+                                    </li>
+                                    <li><a href="#" class="text-gray-800 hover:text-yellow-500 transition">Is it
+                                            'dressing' or 'stuffing'? The great Thanksgiving debate</a></li>
+                                    <li><a href="#" class="text-gray-800 hover:text-yellow-500 transition">See inside
+                                            stunning $5.5M Alabama mansion on 6-acre estate</a></li>
+                                </ul>
+                            </div>
+                            <div class="md:w-1/3">
+                                <img src="https://plus.unsplash.com/premium_photo-1688561383440-feef3fee567d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="News image" class="w-full h-auto rounded-lg shadow-md">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-300 pt-4">
+                        <h3 class="text-sm text-gray-500 uppercase mb-2 font-bold">Alabama Basketball</h3>
+                        <div class="flex flex-col md:flex-row gap-4">
+                            <div class="md:w-2/3">
+                                <a href="#" class="block hover:text-yellow-500 transition">
+                                    <h2 class="text-2xl font-bold mb-2">Casagrande: Illinois chopped 'head off the
+                                        snake,' Tide scored 100 anyway</h2>
+                                </a>
+                            </div>
+                            <div class="md:w-1/3">
+                                <img src="https://images.unsplash.com/photo-1528128889819-3277e9dd6761?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="News image" class="w-full h-auto rounded-lg shadow-md">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

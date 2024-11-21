@@ -1,0 +1,8 @@
+@media (min-width: 768px) {
+  .sticky-container {
+    position: sticky;
+    top: 1rem;
+    max-height: calc(100vh - 2rem);
+    overflow-y: auto;
+  }
+}
