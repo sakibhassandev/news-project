@@ -17,7 +17,7 @@
 
 <body class="bg-white">
     <!-- Header -->
-    <header class="sticky top-0 bg-slate-800 text-white">
+    <header class="z-10 sticky top-0 bg-slate-800 text-white">
         <div class="mx-5 px-4 py-2 flex justify-between items-center">
             <div class="flex items-center gap-4">
                 <div class="flex items-center">
@@ -44,7 +44,7 @@
 
     <!-- Navigation -->
     <nav class="border-b">
-        <div class="lg:container mx-auto px-4">
+        <div class="mx-auto px-4">
             <ul class="flex justify-center space-x-8 py-2">
                 <li><a href="#" class="hover:text-blue-600 border-b-2 border-yellow-400 pb-2">Top Stories</a></li>
                 <li><a href="#" class="hover:text-blue-600">News</a></li>
@@ -55,10 +55,10 @@
     </nav>
 
     <!-- Main Content -->
-    <main class="container mx-auto px-4 py-6">
-        <div class="flex gap-5 justify-center">
+    <main class="max-w-screen-xl mx-auto px-4 py-6">
+        <div class="flex-col lg:flex-row flex gap-5 justify-center">
             <!-- Left Sidebar -->
-            <div class="max-w-[250px] w-full">
+            <div class="lg:max-w-[250px] w-full">
                 <div class="mb-6">
                     <h2 class="lg:text-xl text-lg font-bold mb-4 border-l-4 border-orange-500 pl-2">সাম্প্রতিক</h2>
                     <ul class="space-y-4 list-none list-[bengali] list-inside">
@@ -109,12 +109,12 @@
             </div>
 
             <!-- Main News Section -->
-            <div class="border-l-2 border-r-2 border-gray-400 px-4 w-full max-w-[550px]">
+            <div class="border-l-2 border-r-2 border-gray-400 px-4 w-full lg:max-w-[550px]">
                 <article class="mb-8 border-b-2">
                     <div class="mb-4">
                         <img src="https://images.prothomalo.com/prothomalo-bangla%2F2023-11%2F71b18288-83ab-44e2-ada3-d6f998047e80%2FBNP_logo.jfif?rect=0%2C0%2C1600%2C1067&auto=format%2Ccompress&fmt=webp&format=webp&w=640&dpr=1.0"
-                            alt="Damaged Car" class="h-[280px] w-[500px] mb-3">
-                        <div class="textes md:px-10 w-full max-w-[500px]">
+                            alt="Damaged Car" class="object-cover max-lg:w-full h-[280px] w-[500px] mb-3">
+                        <div class="textes md:px-10 w-full lg:max-w-[500px]">
                             <span class="text-sm text-gray-500 mb-1 block">রাজনীতি</span>
                             <h1 class="lg:text-xl text-xl font-bold mb-2">বিএনপি ছেড়ে ঝালকাঠি-১
                                 (রাজাপুর
@@ -132,7 +132,7 @@
 
                 <!-- Secondary News Items -->
                 <article class="flex gap-4 pb-4 border-b-2 p-4">
-                    <div class="w-full max-w-[270px]">
+                    <div class="w-full lg:max-w-[270px]">
                         <span class="text-sm text-gray-500 mb-1 block">বিজ্ঞাপন</span>
                         <h2 class="lg:text-xl text-lg font-semibold mb-2">বিএনপি ছেড়ে ঝালকাঠি-১ (রাজাপুর কাঠালিয়া)
                             আসনে
@@ -146,7 +146,7 @@
                 </article>
                 <!-- Repeat similar article structure 4-5 more times -->
                 <article class="flex gap-4 pb-4 border-b-2 p-4">
-                    <div class="w-full max-w-[270px]">
+                    <div class="w-full lg:max-w-[270px]">
                         <span class="text-sm text-gray-500 mb-1 block">বিজ্ঞাপন</span>
                         <h2 class="lg:text-xl text-lg font-semibold mb-2">বিএনপি ছেড়ে ঝালকাঠি-১ (রাজাপুর কাঠালিয়া)
                             আসনে
@@ -187,7 +187,7 @@
             <div class="">
                 <div class="mb-6">
                     <span class="text-sm text-gray-500 mb-1 block">Advertisement</span>
-                    <div class="space-y-4">
+                    <div class="max-lg:flex flex-wrap max-lg:gap-4 lg:space-y-4">
                         <div class="">
                             <img src="https://imgs.search.brave.com/asNqMjHaM5tPLKVl8atkoyDzfco_SIfd85X5zuxLZRs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtcGxhdGZvcm0u/OTlzdGF0aWMuY29t/Ly83S0tJNUNJbnVx/di1LUXMzeTNGWE85/OFlqU1U9LzI1Mngy/NTI6MTc1MXgxNzUx/L2ZpdC1pbi81MDB4/NTAwLzk5ZGVzaWdu/cy1jb250ZXN0cy1h/dHRhY2htZW50cy82/Mi82MjUwOC9hdHRh/Y2htZW50XzYyNTA4/MDIy.jpeg"
                                 alt="Advertisement" class="max-w-[265px] h-[220px]">
@@ -210,7 +210,7 @@
         <section class="big-ad-container w-full max-w-[1050px] h-[178px] bg-[#eee9e6]"></section>
     </div>
 
-    <section class="container mx-auto py-8">
+    <section class="max-w-screen-xl mx-auto py-8 px-4">
         <div class="max-w-screen-xl mx-auto px-4 py-8">
             <div class="flex items-center justify-center space-x-4">
                 <div class="relative flex-1">
@@ -230,29 +230,32 @@
                 </div>
             </div>
         </div>
-        <div class="flex flex-col justify-center max-md:items-center md:flex-row gap-6">
+        <div class=" flex flex-col justify-center max-md:items-center lg:flex-row gap-6">
             <!-- Left Side -->
             <div class="space-y-4">
-                <div class="bg-white w-full max-w-[300px] border-b-2 p-4">
+                <div class="bg-white w-full lg:max-w-[300px] border-b-2 p-4">
                     <img src="https://images.prothomalo.com/prothomalo-bangla%2F2023-11%2F71b18288-83ab-44e2-ada3-d6f998047e80%2FBNP_logo.jfif?rect=0%2C0%2C1600%2C1067&auto=format%2Ccompress&fmt=webp&format=webp&w=640&dpr=1.0"
-                        alt="News image" class="w-full max-w-[300px] h-[170px] mb-2">
+                        alt="News image" class="object-cover w-full lg:max-w-[300px] h-[170px] mb-2">
                     <h3 class="text-sm font-bold">অপরাধ</h3>
-                    <p class="text-xl font-semibold">বিএনপি ছেড়ে মালকাঠি-১ (রাজাপুর-কাঠালিয়া) আসনে আওয়ামী লীগের</p>
+                    <p class="lg:text-xl font-semibold">বিএনপি ছেড়ে মালকাঠি-১ (রাজাপুর-কাঠালিয়া) আসনে আওয়ামী লীগের
+                    </p>
                 </div>
-                <div class="bg-white w-full max-w-[300px] p-4">
+                <div class="bg-white w-full lg:max-w-[300px] p-4">
                     <img src="https://images.prothomalo.com/prothomalo-bangla%2F2023-11%2F71b18288-83ab-44e2-ada3-d6f998047e80%2FBNP_logo.jfif?rect=0%2C0%2C1600%2C1067&auto=format%2Ccompress&fmt=webp&format=webp&w=640&dpr=1.0"
-                        alt="News image" class="w-full h-auto mb-2">
+                        alt="News image" class="object-cover w-full lg:max-w-[300px] h-[170px] mb-2">
                     <h3 class="text-sm font-bold">অপরাধ</h3>
-                    <p class="text-xl font-semibold">বিএনপি ছেড়ে মালকাঠি-১ (রাজাপুর-কাঠালিয়া) আসনে আওয়ামী লীগের</p>
+                    <p class="lg:text-xl font-semibold">বিএনপি ছেড়ে মালকাঠি-১ (রাজাপুর-কাঠালিয়া) আসনে আওয়ামী লীগের
+                    </p>
                 </div>
             </div>
             <!-- Middle Feature News -->
-            <div class="w-full max-w-[560px] border-l-2 border-r-2 border-gray-400 bg-white px-4 gap-4 flex flex-col">
+            <div
+                class="w-full lg:max-w-[560px] border-l-2 border-r-2 border-gray-400 bg-white px-4 gap-4 flex flex-col">
                 <div class="news border-b-2">
                     <img src="https://images.prothomalo.com/prothomalo-bangla%2F2023-11%2F71b18288-83ab-44e2-ada3-d6f998047e80%2FBNP_logo.jfif?rect=0%2C0%2C1600%2C1067&auto=format%2Ccompress&fmt=webp&format=webp&w=640&dpr=1.0   "
-                        alt="Main news image" class="w-full max-w-[560px] h-[320px] object-cover mb-2">
+                        alt="Main news image" class="w-full lg:max-w-[560px] h-[320px] object-cover mb-2">
                     <div>
-                        <div class="max-w-[460px] mx-auto">
+                        <div class="max-lg:px-4 lg:max-w-[460px] mx-auto">
                             <h3 class="text-sm font-bold">রাজনীতি</h3>
                             <p class="text-2xl font-bold mb-2">বিএনপি ছেড়ে মালকাঠি-১ (রাজাপুর-কাঠালিয়া) আসনে আওয়ামী
                                 লীগের
@@ -274,16 +277,16 @@
                 </div>
             </div>
             <!-- Right Side -->
-            <div class="max-w-[290px] w-full">
-                <div class="bg-white p-4 md:max-w-sm">
+            <div class="lg:max-w-[290px] w-full">
+                <div class="bg-white p-4 lg:md:max-w-sm">
                     <img src="https://images.prothomalo.com/prothomalo-bangla%2F2023-11%2F71b18288-83ab-44e2-ada3-d6f998047e80%2FBNP_logo.jfif?rect=0%2C0%2C1600%2C1067&auto=format%2Ccompress&fmt=webp&format=webp&w=640&dpr=1.0"
-                        alt="Advertisement" class="w-full max-w-[290px] h-[290px] mb-2">
+                        alt="Advertisement" class="w-full lg:max-w-[210px] h-[290px] mb-2">
                 </div>
-                <div class="bg-white p-4 md:max-w-sm">
+                <div class="bg-white p-4">
                     <h3 class="font-bold mb-1">আইন ও আদালত</h3>
                     <p class="text-lg">বিএনপি ছেড়ে মালকাঠি-১ (রাজাপুর-কাঠালিয়া) আসনে আওয়ামী লীগের</p>
                 </div>
-                <div class="bg-white p-4 md:max-w-sm">
+                <div class="bg-white p-4">
                     <h3 class="font-bold mb-1">অপরাধ</h3>
                     <p class="text-lg">বিএনপি ছেড়ে মালকাঠি-১ (রাজাপুর-কাঠালিয়া) আসনে আওয়ামী লীগের</p>
                 </div>
